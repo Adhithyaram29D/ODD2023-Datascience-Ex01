@@ -20,6 +20,7 @@ Save the Clean data to the file
 
 # CODE 
 Data set:
+```
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -35,8 +36,9 @@ df['rating']=df['rating'].fillna(df['rating'].mean())
 df=df.dropna(subset=['current_overall_rank'])
 df['watchers']=df['watchers'].fillna(df['watchers'].median())
 df.info()
-
+```
 Loan Set:
+```
 import pandas as pd
 import numpy as np
 df=pd.read_csv('/content/Loan_data.csv')
@@ -54,7 +56,7 @@ df.head(5)
 df['Credit_History']=df['Credit_History'].fillna(df['Credit_History'].min())
 df.head()
 df.info()
-
+```
 ## OUTPUT
 # Data_Set.csv:
 ## Non NULL Before:
