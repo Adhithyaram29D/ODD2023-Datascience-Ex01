@@ -19,7 +19,7 @@ Remove the null values from the data
 Save the Clean data to the file
 
 # CODE 
-Data set:
+## Data set:
 ```
 import pandas as pd
 import numpy as np
@@ -43,7 +43,7 @@ df['watchers']=df['watchers'].fillna(df['watchers'].median())
 df.head()
 df.info()
 ```
-Loan Set:
+## Loan Set:
 ```
 import pandas as pd
 import numpy as np
