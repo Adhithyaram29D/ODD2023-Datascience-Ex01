@@ -30,11 +30,17 @@ df.info()
 df.describe()
 df.isnull().sum()
 df=df.dropna(subset=['show_name'])
+df.head()
 df['aired_on']=df['aired_on'].fillna(df['aired_on'].mode()[0])
+df.head()
 df['original_network']=df['original_network'].fillna(df['original_network'].mode()[0])
+df.head()
 df['rating']=df['rating'].fillna(df['rating'].mean())
+df.head()
 df=df.dropna(subset=['current_overall_rank'])
+df.head()
 df['watchers']=df['watchers'].fillna(df['watchers'].median())
+df.head()
 df.info()
 ```
 Loan Set:
@@ -96,3 +102,5 @@ df.info()
 ## Non NULL After:
 ![Screenshot 2023-08-23 161741](https://github.com/Adhithyaram29D/ODD2023-Datascience-Ex01/assets/119393540/fa4136e7-a738-4ee0-8211-81e7265fe566)
 
+## Result:
+Thus the given data is read,cleansed and the cleaned data is saved into the file.
